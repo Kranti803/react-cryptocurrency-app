@@ -1,0 +1,78 @@
+nav {
+  // position: sticky;
+  // top: 0;
+  // left: 0;
+  height: 120px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  > h1 {
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  > ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    > div {
+      display: none;
+    }
+
+    > li > a {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+  .active {
+    color: orange;
+  }
+
+  //mobile navbar.......................................
+
+  .mobile_nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: all 0.4s;
+    height: 100vh;
+    background: black;
+    width: 100%;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 20px;
+      > h2 {
+        font-size: 30px;
+      }
+    }
+    > ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 120px;
+      padding-top: 20px;
+      > li > a {
+        color: white;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  .mobile_nav_opens {
+    transform: translateY(0);
+  }
+}

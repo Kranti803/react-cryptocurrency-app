@@ -1,0 +1,37 @@
+footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 20px;
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    > aside {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      > div {
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+        padding-top: 10px;
+        >a{
+            color: white;
+            &:hover{
+                color: orange;
+            }
+        }
+      }
+    }
+  }
+
+  > p {
+    text-align: center;
+  }
+}

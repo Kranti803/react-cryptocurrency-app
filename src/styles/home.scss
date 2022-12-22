@@ -1,0 +1,49 @@
+.home {
+  width: 100%;
+  > h2 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border-bottom: 2px solid gray;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  > section {
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+    gap: 30px;
+    text-align: center;
+    > div {
+      box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 15px;
+      border-radius: 4px;
+      margin: 15px 25px;
+      padding: 15px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      > p {
+        font-size: 20px;
+      }
+    }
+  }
+  aside {
+    margin: 35px 0px;
+    >h2{
+      text-align: center;
+    }
+    >div{
+        margin-bottom:25px;
+    }
+    >a{
+        display: grid;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+        background-color: orange;
+        color: white;
+        border-radius: 4px;
+        padding: 10px 15px;
+
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.news {
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  .news_card {
+    color: black;
+    min-height: 350px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    padding: 10px 15px;
+    > div {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 25px;
+      > img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+    > p {
+      font-size: 18px;
+    }
+    aside {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      img {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-position: center;
+      }
+      
+      span:nth-child(1) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}

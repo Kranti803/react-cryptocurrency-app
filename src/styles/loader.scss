@@ -1,0 +1,12 @@
+.loader{
+    min-height: 85vh;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    >img{
+        height: 50%;
+        width: 50%;
+        margin: auto;
+    }
+}
