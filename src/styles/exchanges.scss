@@ -1,0 +1,22 @@
+.exchanges{
+    width: 100%;
+    min-height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    h1{
+        font-size: 80px;
+    }
+    button{
+        padding: 10px 15px;
+        background-color: orange;
+        border: none;
+        border-radius: 4px;
+        a{
+        color: white;
+            font-size: x-large;
+        }
+    }
+}
