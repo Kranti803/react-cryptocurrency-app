@@ -12,23 +12,23 @@ const News = ({simplified}) => {
 
   if(isFetching) return <Loader/>;
 
-  const newsData = data.value;
+  const newsData = data?.value;
 
-  // console.log(newsData);
+ 
 
 
   return (
     <section className="news">
      {
-      newsData.map((i)=>(
-        <a href={i.url} target="_blank" className='news_card' key={i.name}>
+      newsData?.map((i)=>(
+        <a href={i?.url} target="_blank" className='news_card' key={i?.name}>
           <div>
-            <h4>{i.name}</h4>
+            <h4>{i?.name}</h4>
             <img src={i?.image?.thumbnail?.contentUrl} alt='currencyImage' />
           </div>
-          <p>{i.description}</p>
+          <p>{i?.description}</p>
           <aside>
-            <span><img src={i?.provider[0]?.image?.thumbnail?.contentUrl || Avtar} alt="" />{i.provider[0].name}</span>
+            <span><img src={i?.provider[0]?.image?.thumbnail?.contentUrl || Avtar} alt="" />{i?.provider[0]?.name}</span>
             <span>{moment(i?.datePublished).startOf().fromNow()}</span>
           </aside>
         </a>
