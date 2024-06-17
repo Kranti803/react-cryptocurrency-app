@@ -13,7 +13,7 @@ const Homepage = () => {
 
   if(isFetching) return <Loader/>;
 
-  const globalStats = data.data.stats;
+  const globalStats = data?.data?.stats;
 
   return (
     <section className="home">
@@ -21,27 +21,27 @@ const Homepage = () => {
       <section>
         <div>
           <p>Total Cryptocurrencies</p>
-          <h4>{millify(globalStats.total)}</h4>
+          <h4>{millify(globalStats?.total)}</h4>
         </div>
         <div>
           <p>Total Coins</p>
-          <h4>{millify(globalStats.totalCoins)}</h4>
+          <h4>{millify(globalStats?.totalCoins)}</h4>
         </div>
         <div>
           <p>Total Markets</p>
-          <h4>{millify(globalStats.totalMarkets)}</h4>
+          <h4>{millify(globalStats?.totalMarkets)}</h4>
         </div>
         <div>
           <p>Total Market Cap</p>
-          <h4>{millify(globalStats.totalMarketCap)}</h4>
+          <h4>{millify(globalStats?.totalMarketCap)}</h4>
         </div>
         <div>
           <p>Total 24h Volume</p>
-          <h4>{millify(globalStats.total24hVolume)}</h4>
+          <h4>{millify(globalStats?.total24hVolume)}</h4>
         </div>
         <div>
           <p>Total Exchanges</p>
-          <h4>{millify(globalStats.totalExchanges)}</h4>
+          <h4>{millify(globalStats?.totalExchanges)}</h4>
         </div>
       </section>
       <aside>
